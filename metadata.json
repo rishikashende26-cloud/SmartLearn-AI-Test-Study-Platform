@@ -1,0 +1,7 @@
+{
+  "name": "Smartlearn - AI Test & Study Platform",
+  "description": "An AI-powered study platform featuring automated test generation from PDFs, real-time webcam monitoring, summary generation, progress tracking, and scheduling.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
