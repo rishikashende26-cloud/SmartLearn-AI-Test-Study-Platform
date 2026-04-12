@@ -33,7 +33,8 @@ export const Auth = ({ onAuthSuccess }: { onAuthSuccess: (user: any) => void }) 
 
     setIsLoading(true);
     try {
-      const endpoint = mode === 'login' ? '/api/auth/login' : '/api/auth/register';
+      const API_URL = 'https://smartlearn-ai-test-study-platform.onrender.com';
+const endpoint = mode === 'login' ? `${API_URL}/api/auth/login` : `${API_URL}/api/auth/register`;
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
